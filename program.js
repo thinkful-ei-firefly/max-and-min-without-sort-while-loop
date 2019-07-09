@@ -1,9 +1,29 @@
 function max(numbers) {
-    // your code here
+    let currentMaxNum = numbers[0];
+    let arrayLength = numbers.length;
+    let i = 0;
+    while (i <= arrayLength) {
+        let currentVar = numbers[i];
+        if (currentVar > currentMaxNum) {
+            currentMaxNum = currentVar;
+        }
+        i++;
+    }
+    return currentMaxNum;
   }
   
   function min(numbers) {
-    // your code here
+    let currentMinNum = numbers[0];
+    let arrayLength = numbers.length;
+    let i = 0;
+    while (i <= arrayLength) {
+        let currentVar = numbers[i];
+        if (currentVar < currentMinNum) {
+            currentMinNum = currentVar;
+        }
+        i++;
+    }
+    return currentMinNum;
   }
   
   /* From here down, you are not expected to 
